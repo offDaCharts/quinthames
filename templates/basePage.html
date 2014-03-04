@@ -10,7 +10,7 @@
     <!-- Le styles -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
         rel="stylesheet">
-    <link href="/static/css/planet.css" rel="stylesheet">
+    <link href="/static/css/quinthames.css" rel="stylesheet">
     {%block css%}{%endblock%}
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -35,13 +35,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">
-          <img src="/static/images/datapop.png">
-          <span>PLAnet <small>v0.1</small></span>
+        <a class="navbar-brand">
+          <span>Robert Quin Thames</span>
         </a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
+          <a class="navbar-brand" href="/">
+            <span>About Me</span>
+          </a>         
+          <a class="navbar-brand" href="/resume">
+            <span>Resume</span>
+          </a>    
+          <a class="navbar-brand" href="/projects">
+            <span>Projects</span>
+          </a>                
+          <a class="navbar-brand" href="/contact">
+            <span>Contact</span>
+          </a>
           {%block nav%}{%endblock%}
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -49,7 +60,10 @@
         </ul>
       </div><!--/.nav-collapse -->
     </nav>
-    {%block content%}{%endblock%}
+
+    <div class="contentContainer">
+      {%block content%}{%endblock%}
+    </div>
   <!-- Le javascript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
@@ -63,6 +77,5 @@
   </script>
   {%block javascript%}{%endblock%}
   </body>
-
 
 </html>

@@ -14,6 +14,14 @@ app.secret_key = 'this key is so secret'
 def show_home():
     return render_template('home.html')
 
+@app.route('/resume')
+def show_resume():
+    return render_template('resume.html')
+
+@app.route('/projects')
+def show_projects():
+    return render_template('projects.html')
+
 
 # App Configuration
 # This section holds all application specific configuration options.
