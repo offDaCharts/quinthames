@@ -1,9 +1,24 @@
 {% extends "basePage.html" %}
 {% block content %}
 <ul class="nav nav-tabs">
-  <li class="tab" val="About"><a href="#wwwb_buy" data-toggle="tab">What Would Warren Buffett Buy</a></li>
-  <li class="tab" val="Resume"><a href="#wwwb_sell" data-toggle="tab">What Would Warren Buffett Sell</a></li>
-  <li class="tab" val="Projects"><a href="#wwwb_hold" data-toggle="tab">What Would Warren Buffett Hold</a></li>
-  <li class="tab" val="say"><a href="#wwwb_say" data-toggle="tab">What Would Warren Buffett Say</a></li>
+  <li class="tab active" val="chatter"><a href="#chatter" data-toggle="tab">Chatter</a></li>
+  <li class="tab" val="nuclear_fusor"><a href="#nuclear_fusor" data-toggle="tab">Bike With Friends</a></li>
+  <li class="tab" val="verysuchmuch"><a href="#verysuchmuch" data-toggle="tab">Very Such Much</a></li>
+  <li class="tab" val="craigslist_crawler"><a href="#craigslist_crawler" data-toggle="tab">Craigslist Crawler</a></li>
 </ul>
+<div class="tab-content content">
+  <div class="tab-pane row-fluid active" id="chatter">
+    
+  </div>
+  <div class="tab-pane row-fluid" id="bike_with_friends">
+    
+  </div>
+  <div class="tab-pane row-fluid" id="verysuchmuch">
+    
+  </div>
+  <div class="tab-pane row-fluid" id="craigslist_crawler">
+    
+  </div>
+</div>
+
 {% endblock %}
