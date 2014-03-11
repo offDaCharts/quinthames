@@ -1,0 +1,54 @@
+{% extends "basePage.html" %}
+{%block css%}
+<link href="/static/css/projects.css" rel="stylesheet">
+{%endblock%}
+{% block content %}
+<div class="projectsContainer">
+  <ul class="nav nav-tabs">
+    <li val="chatter"><a href="/projects/chatter">Chatter</a></li>
+    <li val="nuclear_fusor"><a href="/projects/nuclear_fusor">Nuclear Fusor</a></li>
+    <li val="very_such_much"><a href="/projects/very_such_much">Very Such Much</a></li>
+    <li val="bike_with_friends"><a href="/projects/bike_with_friends">Bike With Friends</a></li>
+<!--     <li val="autonomous_SAR"><a href="/projects/autonomous_SAR">Autonomous SAR</a></li>
+ -->
+  </ul>
+  <div class="tab-content content">
+    <div class="tab-pane row-fluid active">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>{% block header %}{% endblock %}</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About</h2>
+            <p>{% block about %}{% endblock %}</p>
+          </div>
+          <div class="col-md-6" style="text-align:center;">
+              {% block img1 %}{% endblock %}
+         </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" style="text-align:center;">
+              {% block img2 %}{% endblock %}
+          </div>
+          <div class="col-md-6">
+            <h2>Current Status</h2>
+            <p>{% block status %}{% endblock %}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{%block javascript%}
+<script>
+  (function() { //Highlighting Active Tab.
+      var urlArray = window.location.href.split("/");
+      //error thrown here for some reason but still works TODO
+      if ($) $('li[val ="' + (urlArray[4]?urlArray[4]:"chatter") + '"]').toggleClass("active");
+  })();
+</script>
+{%endblock%}
+
+
+{% endblock %}

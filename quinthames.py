@@ -19,8 +19,29 @@ def show_resume():
     return render_template('resume.html')
 
 @app.route('/projects')
-def show_projects():
-    return render_template('projects.html')
+@app.route('/projects/chatter')
+def show_chatter():
+    return render_template('chatter.html')
+
+@app.route('/projects/nuclear_fusor')
+def show_nuclear_fusor():
+    return render_template('nuclear_fusor.html')
+
+@app.route('/projects/bike_with_friends')
+def show_bike_with_friends():
+    return render_template('bike_with_friends.html')
+
+# @app.route('/projects/autonomous_SAR')
+# def show_autonomous_SAR():
+#     return render_template('autonomous_SAR.html')
+
+@app.route('/projects/very_such_much')
+def show_very_such_much():
+    return render_template('very_such_much.html')
+
+@app.route('/contact')
+def show_contact():
+    return render_template('contact.html')
 
 
 # App Configuration
