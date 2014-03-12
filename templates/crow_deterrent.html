@@ -1,0 +1,16 @@
+{% extends "projectsBasePage.html" %}
+{%block title%}Crow Deterrent Project{%endblock%}
+
+{% block header %}Crow Deterrent{% endblock %}
+
+{% block about %}The objective of this experiment was to design and implement an electronic system that can discourage crows from eating the eggs of the California Least Tern, an endangered species that lay their eggs near shores of Venice beach. Due to the territorial nature of crows, killing the crows would only cause a territory battle over the vacant area leading to more crows attacking the terns. The best explored option is to change the local crows’ behavior by taking advantage of their intelligence and associating a negative experience every time they touch a tern’s egg. Also, because crows have a lifespan of about 30 years, “educating” the local crows poses as a great investment.
+{% endblock %}
+
+{% block img1 %}<iframe width="420" height="315" src="//www.youtube.com/embed/fsnAfnVG9WU" frameborder="0" allowfullscreen></iframe>{% endblock %}
+{% block img2 %}<img src="/static/images/crowScematic.png" width="80%" height="80%"></img>{% endblock %}
+
+{% block status %}
+A prototype was designed, built, and tested on a sample of the crows on LMU's campus. The system detects the vibrations from a crow touching the egg and flashes a flashlight and plays a crow distress call to scare the crows away. The device was tested by placing the rigged plastic egg and placing it inside a bag of chips for bait. It proved successful in scaring away the crows, and the crows associated this negative response with the chips as they did not return for repeated attempts.
+<br>The Crow Deterrent Project team consists of Matt Hansen, Owen Dominguez, Joshua Arakaki, and Quin Thames
+<p><a class="btn btn-primary btn-lg" href="/projects/crow_deterrent/report" role="button">See Full Length Report &raquo;</a></p>
+{% endblock %}

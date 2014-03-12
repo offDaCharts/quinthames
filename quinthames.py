@@ -31,9 +31,21 @@ def show_nuclear_fusor():
 def show_bike_with_friends():
     return render_template('bike_with_friends.html')
 
-# @app.route('/projects/autonomous_SAR')
-# def show_autonomous_SAR():
-#     return render_template('autonomous_SAR.html')
+@app.route('/projects/autonomous_SAR')
+def show_autonomous_SAR():
+    return render_template('autonomous_SAR.html')
+
+@app.route('/projects/autonomous_SAR/report')
+def show_autonomous_SAR_report():
+    return render_template('SAR_report.html')
+
+@app.route('/projects/crow_deterrent')
+def show_crow_deterrent():
+    return render_template('crow_deterrent.html')
+
+@app.route('/projects/crow_deterrent/report')
+def show_crow_deterrent_report():
+    return render_template('crow_report.html')
 
 @app.route('/projects/very_such_much')
 def show_very_such_much():
