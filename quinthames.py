@@ -56,7 +56,7 @@ def show_contact():
     return render_template('contact.html')
 
 @app.route('/402')
-def show_contact():
+def aprilFools():
     return redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ", code=302)
 
 
