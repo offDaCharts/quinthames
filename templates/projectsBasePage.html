@@ -5,12 +5,12 @@
 {% block content %}
 <div class="projectsContainer">
   <ul class="nav nav-tabs">
+    <li val="autonomous_SAR"><a href="/projects/autonomous_SAR">Autonomous SAR</a></li>
     <li val="chatter"><a href="/projects/chatter">Chatter</a></li>
     <li val="nuclear_fusor"><a href="/projects/nuclear_fusor">Nuclear Fusor</a></li>
     <li val="very_such_much"><a href="/projects/very_such_much">Very Such Much</a></li>
     <li val="bike_with_friends"><a href="/projects/bike_with_friends">Bike With Friends</a></li>
     <li val="crow_deterrent"><a href="/projects/crow_deterrent">Crow Deterrent</a></li>
-    <li val="autonomous_SAR"><a href="/projects/autonomous_SAR">Autonomous SAR</a></li>
 
   </ul>
   <div class="tab-content content">
@@ -46,7 +46,7 @@
   (function() { //Highlighting Active Tab.
       var urlArray = window.location.href.split("/");
       //error thrown here for some reason but still works TODO
-      if ($) $('li[val ="' + (urlArray[4]?urlArray[4]:"chatter") + '"]').toggleClass("active");
+      if ($) $('li[val ="' + (urlArray[4]?urlArray[4]:"autonomous_SAR") + '"]').toggleClass("active");
   })();
 </script>
 {%endblock%}

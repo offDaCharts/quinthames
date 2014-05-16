@@ -18,7 +18,6 @@ def show_home():
 def show_resume():
     return render_template('resume.html')
 
-@app.route('/projects')
 @app.route('/projects/chatter')
 def show_chatter():
     return render_template('chatter.html')
@@ -31,6 +30,7 @@ def show_nuclear_fusor():
 def show_bike_with_friends():
     return render_template('bike_with_friends.html')
 
+@app.route('/projects')
 @app.route('/projects/autonomous_SAR')
 def show_autonomous_SAR():
     return render_template('autonomous_SAR.html')
